@@ -1,0 +1,104 @@
+﻿<Controls:MetroWindow x:Class="ECE4180FinalProject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        Title="BKL Security" Height="735" Width="1331" ResizeMode="CanMinimize"
+                      WindowStartupLocation="CenterScreen" Name="metroWindowMain" >
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colors.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.AnimatedSingleRowTabControl.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Controls:MetroWindow.RightWindowCommands>
+        <Controls:WindowCommands>
+            <Button Name="btnSwitch" Content="DB Management" Click="dbm_Click"/>
+        </Controls:WindowCommands>
+    </Controls:MetroWindow.RightWindowCommands>
+
+    <TabControl Name="tabControl" Grid.Row="1" SelectedIndex="-1" SelectionChanged="tabMain_SelectionChanged">
+        <TabItem Name="tabStartup" MouseMove="tabStartup_MouseMove" TabIndex="0" >
+            <Grid Margin="4,-16,0,0">
+                <Label Content="ECE 4180" Height="58" HorizontalAlignment="Left" Margin="137,122,0,0" 
+                   Name="lblWelcome1" VerticalAlignment="Top" FontSize="36" Width="171" Foreground="LightBlue" />
+                <Label Content="Comcuter Vision Security" Height="60" HorizontalAlignment="Left" Margin="352,247,0,0" 
+                   Name="lblWelcome2" VerticalAlignment="Top" Width="419" FontSize="36" Foreground="LightBlue"/>
+                <Label Content="Guang Lu" HorizontalAlignment="Left" Margin="837,500,0,0" VerticalAlignment="Top" FontSize="20"  Foreground="LightBlue"/>
+                <Label Content="Benjamin Bailey" HorizontalAlignment="Left" Margin="837,564,0,0" VerticalAlignment="Top" FontSize="20"  Foreground="LightBlue"/>
+                <Label Content="Kevone Hospedales" HorizontalAlignment="Left" Margin="837,531,0,0" VerticalAlignment="Top" FontSize="20"  Foreground="LightBlue"/>
+            </Grid>
+        </TabItem>
+
+        <TabItem Name="tabMainView" TabIndex="1">
+            <Grid>
+                <ListView Margin="10,40,515,343">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Width="100" Header="Name" />
+                            <GridViewColumn Width="100" Header="Visit Time"/>
+                            <GridViewColumn Width="100" Header="Access Level"  />
+                            <GridViewColumn Width="100" Header="Image"  />
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+                <Label Content="Visitor Record" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" 
+                       RenderTransformOrigin="0.266,0.123" Width="146" FontSize="20" Foreground="BlueViolet"/>
+                <Image Name="cameraDisplay" HorizontalAlignment="Left" Height="308" Margin="864,42,0,0" VerticalAlignment="Top" Width="397"/>
+                <Label Content="Live" HorizontalAlignment="Left" Margin="864,0,0,0" VerticalAlignment="Top" 
+                	RenderTransformOrigin="0.266,0.123" Width="146" FontSize="20" Foreground="BlueViolet"/>
+            </Grid>
+        </TabItem>
+
+        <TabItem Name="tabDBM" TabIndex="2">
+            <Grid>
+                <ListView Margin="10,64,45,398" BorderThickness="0,1">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Width="100" Header="Name" />
+                            <GridViewColumn Width="100" Header="Access Level"/>
+                            <GridViewColumn Width="100" Header="Recent Visit"/>
+                            <GridViewColumn Width="100" Header="Image"  />
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+                <Label Content="Database Management" HorizontalAlignment="Left" Margin="1082,0,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" Foreground="LightBlue"/>
+                <Label Content="Autherized Personnel" HorizontalAlignment="Left" Margin="10,33,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="BlueViolet"/>
+                <ListView Margin="10,364,45,42" BorderThickness="0,1">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Width="100" Header="Name" />
+                            <GridViewColumn Width="100" Header="Visit Time"/>
+                            <GridViewColumn Width="100" Header="Access Level"  />
+                            <GridViewColumn Width="100" Header="Image"  />
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+                <Label Content="Visitor History" HorizontalAlignment="Left" Margin="10,333,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="BlueViolet"/>
+                <Button x:Name="btnAddPerson" Content="Add" HorizontalAlignment="Left" Margin="146,33,0,0" VerticalAlignment="Top" Width="59" Height="22" Click="btnAddPerson_Click"/>
+                <Controls:Flyout Name="flyoutAddPerson" 
+                                 Position="Top" Height="333" ClosingFinished="flyoutAddPerson_ClosingFinished">
+                    <Grid>
+                        <Label Content="Add a Person to Database" HorizontalAlignment="Left" Margin="0,26,0,0" VerticalAlignment="Top" FontSize="18" Foreground="LightBlue"/>
+                        <Label Content="Name" HorizontalAlignment="Left" Margin="90,86,0,0" VerticalAlignment="Top" FontSize="18" Foreground="BlueViolet"/>
+                        <Label Content="Access Level" HorizontalAlignment="Left" Margin="39,156,0,0" VerticalAlignment="Top" FontSize="18" Foreground="BlueViolet"/>
+                        <Image Name="intakePic" HorizontalAlignment="Left" Height="308" Margin="765,15,0,0" VerticalAlignment="Top" Width="397"/>
+                        <TextBox Name="newPersonName" HorizontalAlignment="Left" Margin="190,86,0,0" VerticalAlignment="Top" FontSize="18" Foreground="BlueViolet" Width="236"/>
+                        <TextBox Name="newPersonLevel" HorizontalAlignment="Left" Margin="190,156,0,0" VerticalAlignment="Top" FontSize="18" Foreground="BlueViolet" Width="236"/>
+                        <Button x:Name="btnTakePic" Content="Take Pic" HorizontalAlignment="Left" Margin="190,228,0,0" VerticalAlignment="Top" Width="91"/>
+                        <Button x:Name="btnCreateUser" Content="Create User" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="355,228,0,0"/>
+                    </Grid>
+                </Controls:Flyout>
+            </Grid>
+        </TabItem>
+
+    </TabControl>
+
+</Controls:MetroWindow>

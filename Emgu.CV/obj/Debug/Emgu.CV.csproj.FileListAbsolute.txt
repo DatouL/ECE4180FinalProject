@@ -1,0 +1,17 @@
+C:\Users\Datou\Downloads\emgucv\bin\Emgu.CV.License.txt
+C:\Users\Datou\Downloads\emgucv\bin\Emgu.CV.XML
+C:\Users\Datou\Downloads\emgucv\bin\Emgu.CV.dll
+C:\Users\Datou\Downloads\emgucv\bin\Emgu.CV.pdb
+C:\Users\Datou\Downloads\emgucv\Emgu.CV\obj\Debug\Emgu.CV.csprojResolveAssemblyReference.cache
+C:\Users\Datou\Downloads\emgucv\Emgu.CV\obj\Debug\Emgu.CV.Properties.StringTable.resources
+C:\Users\Datou\Downloads\emgucv\Emgu.CV\obj\Debug\Emgu.CV.csproj.GenerateResource.Cache
+C:\Users\Datou\Downloads\emgucv\Emgu.CV\obj\Debug\Emgu.CV.dll
+C:\Users\Datou\Downloads\emgucv\Emgu.CV\obj\Debug\Emgu.CV.pdb
+C:\Users\Datou\Documents\GitHub\ECE4180CVSecurity\bin\Emgu.CV.XML
+C:\Users\Datou\Documents\GitHub\ECE4180CVSecurity\bin\Emgu.CV.dll
+C:\Users\Datou\Documents\GitHub\ECE4180CVSecurity\bin\Emgu.CV.pdb
+C:\Users\Datou\Documents\GitHub\ECE4180CVSecurity\Emgu.CV\obj\Debug\Emgu.CV.csprojResolveAssemblyReference.cache
+C:\Users\Datou\Documents\GitHub\ECE4180CVSecurity\Emgu.CV\obj\Debug\Emgu.CV.Properties.StringTable.resources
+C:\Users\Datou\Documents\GitHub\ECE4180CVSecurity\Emgu.CV\obj\Debug\Emgu.CV.csproj.GenerateResource.Cache
+C:\Users\Datou\Documents\GitHub\ECE4180CVSecurity\Emgu.CV\obj\Debug\Emgu.CV.dll
+C:\Users\Datou\Documents\GitHub\ECE4180CVSecurity\Emgu.CV\obj\Debug\Emgu.CV.pdb

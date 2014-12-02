@@ -1,0 +1,12 @@
+C:\Users\Datou\Downloads\emgucv\bin\Emgu.Util.XML
+C:\Users\Datou\Downloads\emgucv\bin\Emgu.Util.dll
+C:\Users\Datou\Downloads\emgucv\bin\Emgu.Util.pdb
+C:\Users\Datou\Downloads\emgucv\Emgu.Util\obj\Debug\Emgu.Util.csprojResolveAssemblyReference.cache
+C:\Users\Datou\Downloads\emgucv\Emgu.Util\obj\Debug\Emgu.Util.dll
+C:\Users\Datou\Downloads\emgucv\Emgu.Util\obj\Debug\Emgu.Util.pdb
+C:\Users\Datou\Documents\GitHub\ECE4180CVSecurity\bin\Emgu.Util.XML
+C:\Users\Datou\Documents\GitHub\ECE4180CVSecurity\bin\Emgu.Util.dll
+C:\Users\Datou\Documents\GitHub\ECE4180CVSecurity\bin\Emgu.Util.pdb
+C:\Users\Datou\Documents\GitHub\ECE4180CVSecurity\Emgu.Util\obj\Debug\Emgu.Util.csprojResolveAssemblyReference.cache
+C:\Users\Datou\Documents\GitHub\ECE4180CVSecurity\Emgu.Util\obj\Debug\Emgu.Util.dll
+C:\Users\Datou\Documents\GitHub\ECE4180CVSecurity\Emgu.Util\obj\Debug\Emgu.Util.pdb
